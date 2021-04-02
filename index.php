@@ -1,5 +1,6 @@
 <?php 
 require_once 'php_action/db_connect.php';
+require_once 'function/logs.php';
 
 session_start();
 
@@ -38,8 +39,9 @@ if($_POST) {
 
 				// set session
 				$_SESSION['userId'] = $user_id;
-
-				header('location:'.$store_url.'dashboard.php');	
+				logger();
+				header('location:'.$store_url.'dashboard.php');
+				
 			} else{
 				
 				$errors[] = "Incorrect username/password combination";

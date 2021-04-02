@@ -36,10 +36,10 @@ $orderItemResult = $connect->query($orderItemSql);
 <table align="center" cellpadding="0" cellspacing="0" style="width: 100%;border:1px solid black;margin-bottom: 10px;">
                <tbody>
                   <tr>
-                     <td colspan="5" style="text-align:center;color: red;text-decoration: underline;    font-size: 25px;">TAX INVOICE</td>
+                     <td colspan="5" style="text-align:center;color: red;text-decoration: underline;    font-size: 25px;">OORDER/TAX INVOICE</td>
                   </tr>
                   <tr>
-                     <td rowspan="8" colspan="2" style="border-left:1px solid black;" background-image="logo.jpg"><img src="/logo.jpg" alt="logo" width="250px;"></td>
+                     <td rowspan="8" colspan="2" style="border-left:1px solid black;" background-image="logo.jpg"><img src="/logo.jpg" alt="Kobillin" width="250px;"></td>
                      <td colspan="3" style=" text-align: right;">ORIGINAL</td>
                   </tr>
                   <tr>
@@ -49,26 +49,26 @@ $orderItemResult = $connect->query($orderItemSql);
                      <td colspan="3" style=" text-align: right;color: red;font-style: italic;font-weight: 600;text-decoration: underline;font-size: 25px;">IMS</td>
                   </tr>
                   <tr>
-                     <td colspan="3" style=" text-align: right;">Nr. Your First Address,</td>
+                     <td colspan="3" style=" text-align: right;">Kobillin. Enterprise,</td>
                   </tr>
                   <tr>
-                     <td colspan="3" style=" text-align: right;">Cityname,Pincode</td>
+                     <td colspan="3" style=" text-align: right;">Nakuru,20100</td>
                   </tr>
                   <tr>
-                     <td colspan="3" style=" text-align: right;">Tele: 1234567890,1478523690.</td>
+                     <td colspan="3" style=" text-align: right;">Tele: +254711977077,254711977977.</td>
                   </tr>
                   <tr>
-                     <td colspan="3" style=" text-align: right;">Email: email0@email.co.in</td>
+                     <td colspan="3" style=" text-align: right;">Email: info@kobillin.co</td>
                   </tr>
                   <tr>
-                     <td colspan="3" style=" text-align: right;color: blue;text-decoration: underline;">email0@email.co.in</td>
+                     <td colspan="3" style=" text-align: right;color: blue;text-decoration: underline;">info@kobillin.co</td>
                   </tr>
                   <tr>
                      <td colspan="2" style="padding: 0px;vertical-align: top;border-right:1px solid black;">
                         <table align="left" cellpadding="0" cellspacing="0" style="border: thin solid black; width: 100%">
                            <tbody>
                               <tr>
-                                 <td style="width: 74px;vertical-align: top;color: red;" rowspan="3">TO, </td>
+                                 <td style="width: 74px;vertical-align: top;color: red;" rowspan="3">Customer : </td>
                                  <td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: red">&nbsp;'.$clientName.'</td>
                               </tr>
                               <tr>
@@ -82,7 +82,7 @@ $orderItemResult = $connect->query($orderItemSql);
                         <table align="left" cellspacing="0" style="width: 100%; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-width: thin; border-bottom-width: thin; border-left-width: thin; border-right-color: black; border-bottom-color: black; border-left-color: black;">
                            <tbody>
                               <tr>
-                                 <td style=" border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: red;color: red;">G.S.T.IN :'.$gstn.'</td>
+                                 <td style=" border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: red;color: red;">Discount :'.$gstn.'</td>
                                  <td style="border-left-style: solid; border-left-width: thin; border-left-color: black; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: red;color: red;">Mobile No: '.$clientContact.'</td>
                               </tr>
                            </tbody>
@@ -98,7 +98,7 @@ $orderItemResult = $connect->query($orderItemSql);
                                  <td style="border-bottom-style: solid;border-bottom-width: thin;border-bottom-color: black;border-right: 1px solid black;    color: red;">Date: '.$orderDate.'</td>
                               </tr>
                               <tr>
-                                 <td style="border-bottom-style: solid;border-bottom-width: thin;border-bottom-color: black;height: 52px;border-right: 1px solid black;    color: red;">G.S.T.IN: lorem ipsum</td>
+                                 <td style="border-bottom-style: solid;border-bottom-width: thin;border-bottom-color: black;height: 52px;border-right: 1px solid black;    color: red;">VAT In : '.$gstn.'</td>
                               </tr>
                            </tbody>
                         </table>
@@ -122,7 +122,7 @@ $orderItemResult = $connect->query($orderItemSql);
                   $igst = 0;
                   if($payment_place == 2)
                   {
-                     $igst = $subTotal*18/100;
+                     $igst = $subTotal * 18/100;
                   }
                   else
                   {
@@ -150,8 +150,8 @@ $orderItemResult = $connect->query($orderItemSql);
                      <td style="width: 218px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-top-width: thin; border-right-width: thin; border-bottom-width: thin; border-top-color: black; border-right-color: black; border-bottom-color: black;">'.$subTotal.'</td>
                   </tr>
                   <tr>
-                     <td colspan="3" style="border-top: 1px solid black;border-bottom: 1px solid black;border-left: 1px solid black;padding: 5px;">Neft For:- Bank Name</td>
-                     <td rowspan="2" style="border-bottom: 1px solid black;width: 199px;color: white;background-color: black;padding-left: 5px;-webkit-print-color-adjust: exact;">S.G.S.T. 9%</td>
+                     <td colspan="3" style="border-top: 1px solid black;border-bottom: 1px solid black;border-left: 1px solid black;padding: 5px;">Bank Name:- KCB</td>
+                     <td rowspan="2" style="border-bottom: 1px solid black;width: 199px;color: white;background-color: black;padding-left: 5px;-webkit-print-color-adjust: exact;">V.A.T 9%</td>
                      <td rowspan="2" style="border-bottom: 1px solid black;width: 288px;border-right: 1px solid black;">'.$cgst.'</td>
                   </tr>
                   <tr>
@@ -159,7 +159,7 @@ $orderItemResult = $connect->query($orderItemSql);
                   </tr>
                   <tr>
                      <td colspan="3" style="border-bottom: 1px solid black;border-left: 1px solid black;padding: 5px;">Bank IFSC CODE:- 78945612301</td>
-                     <td rowspan="2" style="border-bottom: 1px solid black;width: 149px;background-color: black;color: white;padding-left: 5px;-webkit-print-color-adjust: exact;">C.G.S.T. 9%</td>
+                     <td rowspan="2" style="border-bottom: 1px solid black;width: 149px;background-color: black;color: white;padding-left: 5px;-webkit-print-color-adjust: exact;">Others. 9%</td>
                      <td rowspan="2" style="width:218px;border-bottom: 1px solid black;border-right: 1px solid black;">'.$cgst.'
                      </td>
                   </tr>
@@ -167,9 +167,9 @@ $orderItemResult = $connect->query($orderItemSql);
                      <td colspan="3" style="border-bottom: 1px solid black;border-left: 1px solid black;padding: 5px;">AC. HO. Name:- Comapany Name</td>
                   </tr>
                   <tr>
-                     <td colspan="3" style="border-bottom: 1px solid black;border-left: 1px solid black;padding: 5px;">AC.NO. :- lorem ipsum</td>
-                     <td style="border-bottom: 1px solid black;background-color: black;color: white;padding: 5px;-webkit-print-color-adjust: exact;">I.G.S.T. 18%</td>
-                     <td style="border-bottom: 1px solid black;border-right: 1px solid black;">'.$igst.'</td>
+                     <td colspan="3" style="border-bottom: 1px solid black;border-left: 1px solid black;padding: 5px;">AC.NO. :- 150510211**</td>
+                     <td style="border-bottom: 1px solid black;background-color: black;color: white;padding: 5px;-webkit-print-color-adjust: exact;">TOTAL TAX 18%</td>
+                     <td style="border-bottom: 1px solid black;border-right: 1px solid black;">'.$gstn.'</td>
                   </tr>
                   <tr>
                      <td colspan="3" style="border-left: 1px solid black;border-bottom: 1px solid black;color: red;padding: 5px;">Amount in words</td>
@@ -177,13 +177,13 @@ $orderItemResult = $connect->query($orderItemSql);
                      <td style="border-bottom: 1px solid black;border-right: 1px solid;">'.$total.'</td>
                   </tr>
                   <tr>
-                     <td colspan="3" style="border-left: 1px solid black;border-bottom: 1px solid black;padding: 5px;border-right: 1px solid black;">* Subject to lorem ipsum             <span style="float: right;"> E.&amp;.O.E.</span></td>
-                     <td rowspan="2" colspan="2" style="vertical-align: bottom;padding: 5px;color: red;border-right: 1px solid black;text-align: center;">for, Company Name</td>
+                     <td colspan="3" style="border-left: 1px solid black;border-bottom: 1px solid black;padding: 5px;border-right: 1px solid black;">* Subject to Kenya tax             <span style="float: right;"> G.&amp;.O.K.</span></td>
+                     <td rowspan="2" colspan="2" style="vertical-align: bottom;padding: 5px;color: red;border-right: 1px solid black;text-align: center;">Kobillin, Enterprise</td>
                   </tr>
                   <tr>
                      <td colspan="3" style="border-left: 1px solid black;padding-left: 5px;border-right: 1px solid black;">
-                        * Intrest will be charged upon all acounts 
-                        <p style="margin: 0px;">remaning unpaid after due date</p>
+                        * Thank you shopping with us 
+                        <p style="margin: 0px;">Looking foward to serving you again</p>
                      </td>
                   </tr>
                </tbody>
