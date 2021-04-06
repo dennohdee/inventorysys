@@ -1,10 +1,7 @@
 <?php
-function logger()
-{
-    if(isset($_SESSION['userId'])) {
-        $user_id = $_SESSION['userId'];
-        $log = "INSERT INTO access_log (user_id) 
-        VALUES ('$user_id')";
-    }
+function logger($username){
+    $ip = $_SERVER['ip_address'];
+    $log = "INSERT INTO access_log ('username','ip_address') VALUES ($username,$ip)";
 }
 ?>
+

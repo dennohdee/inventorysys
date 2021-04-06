@@ -39,7 +39,7 @@ if($_POST) {
 
 				// set session
 				$_SESSION['userId'] = $user_id;
-				logger();
+				logger($username);
 				header('location:'.$store_url.'dashboard.php');
 				
 			} else{
